@@ -1,7 +1,7 @@
 class Show < ActiveRecord::Base
 
   def highest_rating
-    Show.maximum
+    Show.rating.maximum
   end
   def most_popular_show
 
